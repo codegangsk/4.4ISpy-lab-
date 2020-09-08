@@ -20,5 +20,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
+    
+    func updateZoomFor(size: CGSize) {
+        let widthScale = size.width / imageView.bounds.width
+        let heightSCale = size.height / imageView.bounds.height
+        let scale = min(widthScale, heightSCale)
+        scrollView.minimumZoomScale = scale
+        scrollView.zoomScale = scale
+    }
 }
 

@@ -16,5 +16,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         super.viewDidLoad()
     }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
 }
 

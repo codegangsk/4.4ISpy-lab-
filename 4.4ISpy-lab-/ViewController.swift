@@ -17,6 +17,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        updateZoomFor(size: view.bounds.size)
+    }
+    
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }

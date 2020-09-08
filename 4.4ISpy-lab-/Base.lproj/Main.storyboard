@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGj-xL-aDe">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MGj-xL-aDe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="193-1939329_mobile-wallpapers-imgur-galaxy-wallpaper-phone" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-re-017">
@@ -35,6 +35,12 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MGj-xL-aDe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="2wh-qL-E4c"/>
+                            <constraint firstItem="MGj-xL-aDe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Rd-Hu-Hsq"/>
+                            <constraint firstItem="MGj-xL-aDe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dXE-fd-Wze"/>
+                            <constraint firstItem="MGj-xL-aDe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hlq-Hk-zQd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

@@ -13,6 +13,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
+        scrollView.delegate = self
         super.viewDidLoad()
     }
 }
